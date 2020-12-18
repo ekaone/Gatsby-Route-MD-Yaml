@@ -1,0 +1,14 @@
+- meta:
+    id: 1
+    sku: CH465517080
+    createdAt: 2020-10-01
+  name: Raspberry
+  description: Module IoT Raspberry yang dapat digunakan untuk Elektronika dan SmartHome dan dapat menjalankan Gatsby
+  appearance: Segera minggu ke 3
+- meta:
+    id: 2
+    sku: SV4680468050
+    createdAt: 2020-10-02
+  name: Arduino
+  description: Module IoT Arduino yang dapat digunakan untuk Elektronika dan SmartHome dan dapat menjalankan Gatsby
+  appearance: Segera minggu ke 2
