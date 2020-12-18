@@ -1,13 +1,13 @@
-import * as React from "react"
-import { graphql, Link } from "gatsby"
+import * as React from "react";
+import { graphql, Link } from "gatsby";
 
 function BlogPost({ data }) {
-  const post = data.markdownRemark.frontmatter
+  const post = data.markdownRemark.frontmatter;
 
   return (
     <div className="wrapper">
       <header>
-        <Link to="/">Go back to "Home"</Link>
+        <Link to="/">Kembali "Home"</Link>
       </header>
       <main>
         <h1>{post.title}</h1>
@@ -15,10 +15,10 @@ function BlogPost({ data }) {
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </main>
     </div>
-  )
+  );
 }
 
-export default BlogPost
+export default BlogPost;
 
 export const query = graphql`
   query($id: String!) {
@@ -31,4 +31,4 @@ export const query = graphql`
       html
     }
   }
-`
+`;

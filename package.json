@@ -6,6 +6,8 @@
   "author": "LekoArts <lekoarts@gmail.com>",
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-remark-images": "^3.8.0",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-yaml": "next",

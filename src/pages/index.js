@@ -47,20 +47,18 @@ function Index({ data }) {
             </li>
           ))}
           <li>
-            <Link to={`/products/self-parking-attack-motorcycle`}>
-              Module PLC
-            </Link>
+            <Link to={`/products/module-plc`}>Module PLC</Link>
             {` `}
             (Halaman ini tidak ada)
           </li>
         </ul>
         <h2>Contoh Routes dengan Markdown</h2>
         <p>
-          The example below is a list of blog posts that were written in
-          markdown and named in the format <em>YYYY-MM-DD-title.md</em>.
-          Markdown nodes automatically add the <em>File</em> node as a parent
-          thus you can access things like the <em>name</em>, e.g. to construct a
-          route at <em>/blog/YYYY-MM-DD-title</em>.
+          Contoh di bawah adalah Blog yang ditulis dengan Markdown dengan format{" "}
+          <em>YYYY-MM-DD-title.md</em>. Markdown nodes secara otomatis
+          menambhakan <em>File</em> node sebagai parent yang dapat diakses
+          dengan menggunakan seperti <em style={{ color: "yellow" }}>nama</em>,
+          contohnya <em style={{ color: "yellow" }}>/blog/YYYY-MM-DD-title</em>.
         </p>
         <ul>
           {data.blog.nodes.map((post) => (
@@ -71,11 +69,9 @@ function Index({ data }) {
             </li>
           ))}
         </ul>
-        <h3>Nested collections</h3>
+        <h3>Contoh Nested</h3>
         <p>
-          The example below does a <em>group</em> query on all parks and links
-          to them. The paths are created as nested collections, e.g. to
-          construct a route at <em>/parks/theme-park/park-one/</em>.
+          Contoh Nested <em>/parks/theme-park/park-one/</em>.
         </p>
         <div>
           {data.parks.group.map((field) => {

@@ -7,7 +7,7 @@ function ProductView({ product }) {
       <header>
         Product
         <br />
-        <Link to="/">Go back to "Home"</Link>
+        <Link to="/">Kembali "Home"</Link>
       </header>
       <main>
         <h1>{product.name}</h1>
@@ -16,7 +16,7 @@ function ProductView({ product }) {
         </p>
         <p>SKU: {product.meta.sku}</p>
       </main>
-      <footer>Product provided by Incite.</footer>
+      <footer>Product provided by PT ABC.</footer>
     </div>
   );
 }

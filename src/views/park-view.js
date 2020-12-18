@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 
 function ParkView({ park }) {
   return (
     <div className="wrapper">
       <header>
-        <Link to="/">Go back to "Home"</Link>
+        <Link to="/">Kembali "Home"</Link>
       </header>
       <main>
         <h1>{park.name}</h1>
@@ -16,7 +16,7 @@ function ParkView({ park }) {
       </main>
       <footer>Delos Corporation.</footer>
     </div>
-  )
+  );
 }
 
-export default ParkView
+export default ParkView;

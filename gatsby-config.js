@@ -3,20 +3,33 @@ module.exports = {
     title: `File System Route API`,
   },
   plugins: [
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-transformer-yaml`,
       options: {
         // Conditionally set the typeName so that we both use a lowercased and capitalized type name
         typeName: ({ node }) => {
-          const name = node.sourceInstanceName
+          const name = node.sourceInstanceName;
           if (name === `products`) {
-            return `Product`
+            return `Product`;
           }
           if (name === `parks`) {
-            return `park`
+            return `park`;
           }
-          return name
+          return name;
         },
       },
     },
@@ -42,4 +55,4 @@ module.exports = {
       },
     },
   ],
-}
+};
