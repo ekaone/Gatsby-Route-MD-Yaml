@@ -100,15 +100,14 @@ function Index({ data }) {
         </div>
         <h2>Client-Only routes</h2>
         <p>
-          As shortly mentioned for the "Collection routes" the{` `}
-          <em>[name].js</em> file inside <em>src/pages/products</em> is alreay a
-          client-only page. But you can do even more with those! See the example
-          below:
+          Koleksi routes menggunakan{` `}
+          <em style={{ color: "yellow" }}>[name].js</em> file didalam{" "}
+          <em style={{ color: "yellow" }}>src/pages/products</em>
         </p>
         <ul>
           <li>
-            <Link to="/products/incite/offer/REHOBOAM">
-              /products/[brand]/offer/[coupon]
+            <Link to="/products/gatotkaca/offer/BERUNTUNG123">
+              /products/[brand]/penawaran/[coupon]
             </Link>
           </li>
           <li>
